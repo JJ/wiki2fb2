@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use File::Slurp;
+
+my $wiki = shift || 'perl.wiki';
+
+limpia_wiki( $wiki );

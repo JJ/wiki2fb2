@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+use  WWW::Wikipedia;
+
+my $wiki = WWW::Wikipedia->new();
+my $entry = $wiki->search( 'Perl' );
+print $entry->text();
+
+my $entry_es = $entry->language( 'es' );
+print $entry_es->text();
